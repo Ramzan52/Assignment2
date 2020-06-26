@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Bookers</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="main.css" />
+  </head>
+
+  <body class="container">
+    <h1 id="H1">Rent A Car</h1>
+    <h3>NOTE:</h3>
+    <p>
+      -> There are two options for each vehicle type one is for percentage
+      uplift one is for flat amount.
+    </p>
+    <h3>Options!</h3>
+    <div id="first">
+      <h3>Estate</h3>
+      <input
+        type="checkbox"
+        id="radio-1"
+        class="radio"
+        checked
+        onclick="if(document.getElementById('radio-1').checked===true){
+	document.getElementById('radio-2').checked=false;
+		document.getElementById('in-2').disabled=true
+	}if(document.getElementById('in-1').disabled===true){document.getElementById('in-1').disabled=false}"
+      />
+      <input
+        id="in-1"
+        type="number"
+        pattern="/^-?\d+\.?\d*$/"
+        onKeyPress="if(this.value.length==2) return false;"
+        oninput="validity.valid||(value='');"
+        min="1"
+        max="5"
+      />
+      %
+
+      <br />
+
+      <input
+        type="checkbox"
+        id="radio-2"
+        class="radio"
+        onclick="if(document.getElementById('radio-2').checked===true){
+	document.getElementById('radio-1').checked=false;
+		document.getElementById('in-1').disabled=true;
+	}if(document.getElementById('in-2').disabled===true){document.getElementById('in-2').disabled=false}"
+      />
+      <input
+        type="number"
+        id="in-2"
+        pattern="/^-?\d+\.?\d*$/"
+        disabled
+        onKeyPress="if(this.value.length==5) return false;"
+        oninput="validity.valid||(value='');"
+        min="1"
+        max="5"
+      />
+      £
+    </div>
+    <div id="one">
+      <h3>5-7 passengers</h3>
+      <input
+        type="checkbox"
+        id="radio-3"
+        class="radio"
+        checked
+        onclick="if(document.getElementById('radio-3').checked===true){
+	document.getElementById('radio-4').checked=false;
+		document.getElementById('in-4').disabled=true
+	}if(document.getElementById('in-3').disabled===true){document.getElementById('in-3').disabled=false}"
+      />
+      <input
+        id="in-3"
+        type="number"
+        pattern="/^-?\d+\.?\d*$/"
+        onKeyPress="if(this.value.length==2) return false;"
+        oninput="validity.valid||(value='');"
+        min="1"
+        max="5"
+      />
+      %
+
+      <br />
+
+      <input
+        type="checkbox"
+        id="radio-4"
+        class="radio"
+        onclick="if(document.getElementById('radio-4').checked===true){
+	document.getElementById('radio-3').checked=false;
+		document.getElementById('in-3').disabled=true;
+	}if(document.getElementById('in-4').disabled===true){document.getElementById('in-4').disabled=false}"
+      />
+      <input
+        type="number"
+        id="in-4"
+        pattern="/^-?\d+\.?\d*$/"
+        disabled
+        onKeyPress="if(this.value.length==5) return false;"
+        oninput="validity.valid||(value='');"
+        min="1"
+        max="5"
+      />
+      £
+    </div>
+    <div id="two">
+      <h3>8-12 passeneger</h3>
+      <input
+        type="checkbox"
+        id="radio-5"
+        class="radio"
+        checked
+        onclick="if(document.getElementById('radio-5').checked===true){
+	document.getElementById('radio-6').checked=false;
+		document.getElementById('in-6').disabled=true
+	}if(document.getElementById('in-5').disabled===true){document.getElementById('in-5').disabled=false}"
+      />
+      <input
+        id="in-5"
+        type="number"
+        pattern="/^-?\d+\.?\d*$/"
+        onKeyPress="if(this.value.length==2) return false;"
+        oninput="validity.valid||(value='');"
+        min="1"
+        max="5"
+      />
+      %
+
+      <br />
+
+      <input
+        type="checkbox"
+        id="radio-6"
+        class="radio"
+        onclick="if(document.getElementById('radio-6').checked===true){
+	document.getElementById('radio-5').checked=false;
+		document.getElementById('in-5').disabled=true;
+	}if(document.getElementById('in-6').disabled===true){document.getElementById('in-6').disabled=false}"
+      />
+      <input
+        type="number"
+        id="in-6"
+        pattern="/^-?\d+\.?\d*$/"
+        disabled
+        onKeyPress="if(this.value.length==5) return false;"
+        oninput="validity.valid||(value='');"
+        min="1"
+        max="5"
+      />
+      £
+    </div>
+  </body>
+</html>

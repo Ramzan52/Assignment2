@@ -1,0 +1,27 @@
+#one {
+  float: left;
+
+  background: gray;
+  padding-right: 20px;
+  padding-left: 20px;
+  border: 2px solid black;
+}
+#two {
+  float: left;
+
+  background: gray;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 2px solid black;
+}
+#first {
+  float: left;
+  border: 2px solid black;
+  padding-right: 20px;
+  padding-left: 20px;
+  background: gray;
+}
+#H1 {
+  text-decoration: underline;
+  text-align: center;
+}
